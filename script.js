@@ -1,457 +1,95 @@
-// Questions for java
 
-const javaQuestions = [
-    {
-      correctAnswer: 'To define an anonymous function',
-      options: ['To represent an instance of a class', 'To create a new object ', 'To define an anonymous function', 'To declare a constant value'],
-      question:
-        "What is the purpose of a lambda expression in Java?",
-    },
-    {
-      correctAnswer: 'Multiple inheritance',
-      options: [
-        'Multiple inheritance',
-        'Multithreading',
-        'Polymorphism',
-        'Encapsulation',
-      ],
-      question:
-        "Which Java feature allows you to implement multiple interfaces in a single class?",
-    },
-    {
-      correctAnswer: 'It indicates that the variables value may change asynchronously.',
-      options: [
-        'It ensures that the variable is immutable.',
-        'It prevents the variable from being accessed by multiple threads simultaneously.',
-        'It indicates that the variables value may change asynchronously.',
-        'It enforces strict type checking for the variable.',
-      ],
-      question:
-        "In Java, what is the purpose of the volatile keyword when applied to a variable?",
-    },
-    {
-      correctAnswer: 'StringBuilder provides better performance for string concatenation.',
-      options: [
-        'StringBuilder is more memory-efficient.',
-        'StringBuilder is immutable.',
-        'StringBuilder allows for in-place modification of strings.',
-        'StringBuilder provides better performance for string concatenation.',
-      ],
-      question: 'What is the primary advantage of using the "StringBuilder" class over the "String" class for manipulating strings?',
-    },
-    {
-      correctAnswer: 'A way to create generic types for use with collections and classes',
-      options: [
-        'A way to create generic types for use with collections and classes',
-        'A programming language feature for creating new data types',
-        'A method for dynamically allocating memory at runtime',
-        'A feature for defining abstract classes',
-      ],
-      question:
-        "What does the term generics refer to in Java?",
-    },
-    {
-        correctAnswer: 'TreeMap',
-        options: ['HashSet', 'TreeMap', 'ArrayList', 'LinkedHashMap'],
-        question:
-          "Which of the following Java collections ensures that elements are stored in ascending order?",
-      },
-      {
-        correctAnswer: 'It indicates that the field should be excluded from serialization.',
-        options: ['It indicates that the field should be excluded from serialization.', 'It specifies that the fields value cannot be changed after initialization.', 'It enforces that the field is thread-safe.', 'It marks the field as a constant.'],
-        question:
-          "What is the purpose of the transient keyword when applied to a class field in Java?",
-      },
-      {
-        correctAnswer: 'An exception that must be explicitly caught or declared',
-        options: ['An exception that occurs at runtime', 'An exception that must be explicitly caught or declared', 'An exception caused by memory allocation errors', 'An exception that is never thrown in practice'],
-        question:
-          "In Java, what is a checked exception?",
-      },
-      {
-        correctAnswer: 'Singleton',
-        options: ['Singleton', 'Factory ', 'Observer', 'Decorator'],
-        question:
-          "Which design pattern is used to ensure a class has only one instance and provides a global point of access to that instance?",
-      },
-      {
-        correctAnswer: 'It indicates that the class cannot be subclassed.',
-        options: ['It indicates that the class cannot be subclassed.', 'It makes all methods in the class final.', 'It prevents the class from being instantiated.', 'It specifies that the class is abstract.'],
-        question:
-          "What does the final keyword do when applied to a class in Java?",
-      },
-  ];
+//sentences
+const text=["The rain was coming. Everyone thought this would be a good thing. It hadn't rained in months and the earth was dry as a bone. It wasn't a surprise that everyone thought a good rain was what was needed, but they never expected how much rain would actually arrive. Sometimes it's the first moment of the day that catches you off guard. That's what Wendy was thinking. She opened her window to see fire engines screeching down the street. While this wasn't something completely unheard of, it also wasn't normal. It was a sure sign of what was going to happen that day. She could feel it in her bones and it wasn't the way she wanted the day to begin.",
+"I'm heading back to Colorado tomorrow after being down in Santa Barbara over the weekend for the festival there. I will be making October plans once there and will try to arrange so I'm back here for the birthday if possible. I'll let you know as soon as I know the doctor's appointment schedule and my flight plans. She was aware that things could go wrong. In fact, she had trained her entire life in anticipation that things would go wrong one day. She had quiet confidence as she started to see that this was the day that all her training would be worthwhile and useful. At this point, she had no idea just how wrong everything would go that day.",
+"At that moment he had a thought that he'd never imagine he'd consider. I could just cheat, he thought, and that would solve the problem. He tried to move on from the thought but it was persistent. It didn't want to go away and, if he was honest with himself, he didn't want it to. Stormi is a dog. She is dark grey and has long legs. Her eyes are expressive and are able to let her humans know what she is thinking. Her tongue is long, pink, and wet. Her long legs allow her to sprint after other dogs, people or bunnies. She can be a good dog, but also very bad. Her tail wags when happy or excited and hides between her back legs when she is bad. Stormi is a dog I love.",
+"It wasn't quite yet time to panic. There was still time to salvage the situation. At least that is what she was telling himself. The reality was that it was time to panic and there wasn't time to salvage the situation, but he continued to delude himself into believing there was. He ordered his regular breakfast. Two eggs sunnyside up, hash browns, and two strips of bacon. He continued to look at the menu wondering if this would be the day he added something new. This was also part of the routine. A few seconds of hesitation to see if something else would be added to the order before demuring and saying that would be all. It was the same exact meal that he had ordered every day for the past two years.",
+"The computer wouldn't start. She banged on the side and tried again. Nothing. She lifted it up and dropped it to the table. Still nothing. She banged her closed fist against the top. It was at this moment she saw the irony of trying to fix the machine with violence. All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.",
+"The opened package of potato chips held the answer to the mystery. Both detectives looked at it but failed to realize it was the key to solve the crime. They passed by it assuming it was random trash ensuring that the case would never be solved. Hopes and dreams were dashed that day. It should have been expected, but it still came as a shock. The warning signs had been ignored in favor of the possibility, however remote, that it could actually happen. That possibility had grown from hope to an undeniable belief it must be destiny. That was until it wasn't and the hopes and dreams came crashing down.",
+"It was a simple green chair. There was nothing extraordinary about it or so it seemed. It was the type of chair one would pass without even noticing it was there, let alone what the actual color of it was. It was due to this common and unassuming appearance that few people actually stopped to sit in it and discover its magical powers. Her hair was a tangled mess which she tried to make presentable by putting in a lump on the top of her head. It didn't really work although it was a valiant attempt. While most people simply noticed the tangled mess on top of her head, what most people failed to understand that within the tangles mess was an entirely new year. That was her secret. She kept worlds on top of her head.",
+"There are only three ways to make this work. The first is to let me take care of everything. The second is for you to take care of everything. The third is to split everything 50 / 50. I think the last option is the most preferable, but I'm certain it'll also mean the end of our marriage. It's never good to give them details, Janice told her sister. Always be a little vague and keep them guessing. Her sister listened intently and nodded in agreement. She didn't fully understand what her sister was saying but that didn't matter. She loved her so much that she would have agreed to whatever came out of her mouth.",
+"The amber droplet hung from the branch, reaching fullness and ready to drop. It waited. While many of the other droplets were satisfied to form as big as they could and release, this droplet had other plans. It wanted to be part of history. It wanted to be remembered long after all the other droplets had dissolved into history. So it waited for the perfect specimen to fly by to trap and capture that it hoped would eventually be discovered hundreds of years in the future. After hunting for several hours, we finally saw a large seal sunning itself on a flat rock. I took one of the wooden clubs while Larry took the longer one. We slowly snuck up behind the seal until we were close enough to club it over its head. The seal slumped over and died. This seal would help us survive. We could eat the meat and fat. The fat could be burned in a shell for light and the fur could be used to make a blanket. We declared our first day of hunting a great success.",
+"I checked in for the night at Out O The Way motel. What a bad choice that was. First I took a shower and a spider crawled out of the drain. Next, the towel rack fell down when I reached for the one small bath towel. This allowed the towel to fall halfway into the toilet. I tried to watch a movie, but the remote control was sticky and wouldn’t stop scrolling through the channels. I gave up for the night and crawled into bed. I stretched out my leg and felt something furry by my foot. Filled with fear, I reached down and to my surprise, I pulled out a raccoon skin pair of underwear. After my initial relief that it wasn’t alive, the image of a fat, ugly businessman wearing raccoon skin briefs filled my brain. I jumped out of the bed, threw my toothbrush into my bag, and sprinted towards my car. There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better. No matter how many times he relived the situation in his head, there was never really a good alternative course of action. There simply wasn't a whole lot he could have done in that particular moment."];
 
-//   C Questions
-const cQuestions= [
-    {
-      correctAnswer: 'It indicates that the variables value may change asynchronously.',
-      options: ['It specifies that the variable cannot be modified.', 'It ensures that the variable is initialized to zero.', 'It indicates that the variables value may change asynchronously.', 'It enforces strict type checking for the variable.'],
-      question:
-        "In C, what is the purpose of the volatile keyword when applied to a variable?",
-    },
-    {
-      correctAnswer: 'dynamic',
-      options: [
-        'auto',
-        'register',
-        'static',
-        'dynamic',
-      ],
-      question:
-        "Which of the following is not a valid storage class specifier in C?",
-    },
-    {
-      correctAnswer: '"calloc" initializes the memory to zero, while "malloc" does not.',
-      options: [
-        '"malloc" initializes the memory to zero, while "calloc" does not.',
-        '"calloc" initializes the memory to zero, while "malloc" does not.',
-        'There is no difference between "malloc" and "calloc."',
-        '"malloc" and "calloc" cannot be used for memory allocation in C.',
-      ],
-      question:
-        'In C, what is the difference between "malloc" and "calloc" when allocating memory?',
-    },
-    {
-      correctAnswer: 'It specifies that the variable is constant and cannot be modified.',
-      options: [
-        'It specifies that the variable is constant and cannot be modified.',
-        'It enforces that the variable must be initialized when declared.',
-        'It allows the variable to have a varying value.',
-        'It prevents the variable from being used in arithmetic operations.',
-      ],
-      question: 'What does the "const" keyword indicate in C when applied to a variable?',
-    },
-    {
-      correctAnswer: 'It specifies that the variable is automatic and will be initialized to zero.',
-      options: [
-        'It specifies that the variable is automatic and will be initialized to zero.',
-        'It indicates that the variable should be stored in the CPU register.',
-        'It enforces strict type checking for the variable.',
-        'It specifies that the variable is a constant and cannot be modified.',
-      ],
-      question:
-        "In C, what is the purpose of the 'auto' keyword when declaring a variable within a function?",
-    },
-    {
-        correctAnswer: 'To calculate the size of a variable or data type in bytes',
-        options: [
-          'To calculate the size of an array',
-          'To determine the number of elements in an array',
-          'To calculate the size of a variable or data type in bytes',
-          'To find the largest element in an array',
-        ],
-        question: 'In C, what is the purpose of the "sizeof" operator?',
-      },
-      {
-        correctAnswer: '"fwrite" is used for binary data, while "fputs" is used for text data.',
-        options: [
-          '"fwrite" is used for binary data, while "fputs" is used for text data.',
-          '"fwrite" is used for text data, while "fputs" is used for binary data.',
-          'There is no difference between "fwrite" and "fputs."',
-          '"fwrite" and "fputs" cannot be used for file output in C.',
-        ],
-        question: 'What is the difference between "fwrite" and "fputs" in C when writing to a file?',
-      },
-      {
-        correctAnswer: 'malloc',
-        options: [
-          'malloc',
-          'calloc',
-          'realloc',
-          'free',
-        ],
-        question: 'In C, which function is used to dynamically allocate memory for an array of elements?',
-      },
-      {
-        correctAnswer: 'It terminates the loop and continues with the next iteration.',
-        options: [
-          'It terminates the loop and continues with the next iteration.',
-          'It exits the program.',
-          'It generates a runtime error.',
-          'It skips the current iteration and continues with the next one.',
-        ],
-        question: 'What does the "break" statement do when used within a loop in C?',
-      },
-      {
-        correctAnswer: 'decimal',
-        options: [
-          'float',
-          'double',
-          'long long',
-          'decimal',
-        ],
-        question: 'Which of the following is not a valid data type in C?',
-      },
-  ];
+// generateRandomText();
 
-//sql qusetions
-const sqlQuestions= [
-  {
-    correctAnswer: 'The process of organizing data in a database efficiently',
-    options: ['The process of organizing data in a database efficiently', 'The process of sorting data in ascending order', 'The process of creating primary keys for all tables', 'The process of adding indexes to all columns in a table'],
-    question:
-      'In SQL, what does the term "Normalization" refer to?',
-  },
-  {
-    correctAnswer: 'A function that operates on each row individually in a result set',
-    options: [
-      'A function that operates on each row individually in a result set',
-      'A function used for sorting rows in a table',
-      'A function that groups rows based on a specified column',
-      ' A function used to update data in a table',
-    ],
-    question:
-      'In SQL, what does the term "window function" refer to?',
-  },
-  {
-    correctAnswer: 'CREATE TABLE',
-    options: [
-      'CREATE INDEX',
-      'CREATE TABLE',
-      'CREATE CONSTRAINT',
-      'CREATE RELATIONSHIP',
-    ],
-    question:
-      'Which SQL statement is used to define constraints that enforce referential integrity between two tables?',
-  },
-  {
-    correctAnswer: 'To check if any rows exist in the result of a subquery',
-    options: [
-      'To check if a table exists in the database',
-      'To determine if a column exists in a table',
-      'To check if any rows exist in the result of a subquery',
-      'To check if a database exists on the server',
-    ],
-    question: 'In SQL, what is the purpose of the "EXISTS" keyword in a subquery?',
-  },
-  {
-    correctAnswer: 'GRANT',
-    options: [
-      'GRANT',
-      'ALLOW',
-      'PERMIT',
-      'AUTHORIZE',
-    ],
-    question:
-      'Which SQL statement is used to grant specific privileges on a database object to a user or role?',
-  },
-  {
-    correctAnswer: 'To insert, update, or delete data in a target table based on the results of a source query',
-    options: [
-      'To merge two or more tables into a single table',
-      'To insert, update, or delete data in a target table based on the results of a source query',
-      'To combine rows from multiple tables into a single result set',
-      'To create a new table by joining two existing tables',
-    ],
-    question: 'What is the purpose of the SQL "MERGE" statement?',
-  },
-  {
-    correctAnswer: 'DROP TABLE',
-    options: [
-      'DROP TABLE',
-      'DELETE TABLE',
-      'REMOVE TABLE',
-      'TRUNCATE TABLE',
-    ],
-    question: 'Which SQL statement is used to remove a table and all of its data from the database permanently?',
-  },
-  {
-    correctAnswer: 'To roll up summary values in a result set, producing subtotals and a grand total',
-    options: [
-      'To roll back changes made to the database',
-      'To roll up summary values in a result set, producing subtotals and a grand total',
-      'To roll over to the next page of query results',
-      'To roll up the scroll bar in a database query tool',
-    ],
-    question: 'What is the purpose of the SQL "ROLLUP" operator in a GROUP BY clause?',
-  },
-  {
-    correctAnswer: 'To conditionally transform data in a query',
-    options: [
-      'To create a new table',
-      'To define a foreign key constraint',
-      'To conditionally transform data in a query',
-      'To define a primary key constraint',
-    ],
-    question: 'In SQL, what is the purpose of the "CASE" statement?',
-  },
-  {
-    correctAnswer: 'To retrieve sensitive information from a database',
-    options: [
-      'To retrieve sensitive information from a database',
-      'To delete all data from a database',
-      'To create new database tables',
-      'To increase the performance of a database',
-    ],
-    question: 'What is the primary purpose of SQL injection attacks?',
-  },
-];
-//JavaScript  questions
-const JavaScriptQuestions= [
-    {
-      correctAnswer: 'To create a new array by applying a function to each item in an existing array',
-      options: ['To iterate over the properties of an object', 'To create a new array by applying a function to each item in an existing array', 'To filter elements from an array based on a condition', 'To remove duplicate items from an array'],
-      question:
-        "What is the purpose of the JavaScript map function?",
-    },
-    {
-      correctAnswer: 'null represents the absence of a value assigned intentionally, while undefined represents the absence of a value that has not been assigned.',
-      options: ['They are the same and can be used interchangeably.', 'null represents the absence of a value assigned intentionally, while undefined represents the absence of a value that has not been assigned.', 'null is a number, while undefined is a string.', 'null is a reference error, while undefined is a syntax error.'],
-      question:
-        "What is the difference between null and undefined in JavaScript?",
-    },
-    {
-      correctAnswer: '===',
-      options: ['==', '===', '=', '!='],
-      question:
-        "Which JavaScript operator is used for strict equality (both value and type must match)?",
-    },
-    {
-      correctAnswer: 'To execute a function after a specified delay',
-      options: ['To create a recursive function', 'To execute a function after a specified delay', 'To pause the execution of a function', 'To set the interval for a loop'],
-      question:
-        "What is the purpose of the JavaScript setTimeout function?",
-    },
-    {
-      correctAnswer: 'class MyClass {}',
-      options: ['class MyClass = {}', 'function MyClass() {}', 'class MyClass {}', 'prototype MyClass {}'],
-      question:
-        "How do you define a JavaScript class using ES6 syntax?",
-    },
-    {
-      correctAnswer: 'To handle exceptions and errors',
-      options: ['To define a function', 'To declare a variable', 'To handle exceptions and errors', 'To create a loop'],
-      question:
-        "What is the purpose of the JavaScript try...catch statement?",
-    },
-    {
-      correctAnswer: 'pop()',
-      options: ['push()', 'pop()', 'shift()', 'unshift()'],
-      question:
-        "Which JavaScript method is used to remove an item from the end of an array?",
-    },
-    {
-      correctAnswer: 'document.getElementById("myElement").textContent = "New Text";',
-      options: ['document.getElementById("myElement").innerHTML = "New Text";', 'document.getElementById("myElement").textContent = "New Text";', 'document.getElementById("myElement").text = "New Text";', 'document.getElementById("myElement").value = "New Text";'],
-      question:
-        "How can you change the text content of an HTML element with the ID 'myElement' using JavaScript?",
-    },
-    {
-      correctAnswer: 'Create a new HTML element',
-      options: ['Create a new JavaScript function', 'Create a new HTML element', 'Create a new CSS class', 'Create a new JSON object'],
-      question:
-        "What does the document.createElement method in JavaScript allow you to do?",
-    },
-    {
-      correctAnswer: 'appendChild',
-      options: ['appendChild', 'createChild', 'addNode', 'insertChild'],
-      question:
-        "To append a child element to another element in the DOM using JavaScript, which method should you use?",
-    },
-    
-    
-  ];
-     
-      let score=0;
-      let currentQuestion = 0;
-       //Accessing all the elements:
-       const questionEl = document.getElementById("question");
-       const optionEl = document.getElementById("options");
-       const scoreEl = document.getElementById("score");
-       const nextEl=document.getElementById("next");
-       const disclaimerEl=document.getElementById("disclaimer");
-//   Showing all the skills
-showSKills();
-let questions=null;
-function showSKills(){
-    const skills = ["C", "Java", "Javascript","Sql"];
-    questionEl.textContent="Choose the skill you wish to put yourself to the test with.";
-   
-    skills.forEach((skill)=>{
-        document.getElementById("next").style.display = "none";
-        const btn=document.createElement('button');
-        btn.textContent=skill;
-        optionEl.appendChild(btn);
-        btn.addEventListener("click", () => {
-            optionEl.textContent = '';
-            if(skill=='Java'){
-                questions=javaQuestions;
-                showQuestion();
-            }
-            else if(skill=='C'){
-            questions=cQuestions;
-            showQuestion();
-            }
-            else if(skill=='Sql'){
-              questions=sqlQuestions;
-              showQuestion();
-              }
-              else if(skill=='Javascript'){
-                questions=JavaScriptQuestions;
-                showQuestion();
-                }
-            });
-            
-    })
+const index= Math.floor([Math.random()*10]);
+const sentences = text[index];
+
+
+// code
+let currentSentenceIndex = 0;
+let startTime, endTime;
+let timerInterval;
+
+const sentenceElement = document.getElementById("sentence");
+const inputElement = document.getElementById("input");
+const startButton = document.getElementById("start-btn");
+const timerElement = document.getElementById("timer");
+const speedElement = document.getElementById("speed");
+const accuracyElement = document.getElementById("accuracy");
+const resultElement = document.getElementById("result");
+const retryButton = document.getElementById("retry-btn");
+
+
+function startTest() {
+  sentenceElement.innerHTML = sentences;
+  inputElement.value = "";
+  inputElement.disabled = false;
+  inputElement.focus();
+  startButton.disabled = true;
+  startTime = new Date();
+  timerInterval = setInterval(updateTimer, 1000);
+  setTimeout(endTest, 30000); // End the test after 30 seconds
 }
 
-    
-    // next
-    nextEl.addEventListener('click',nextQuestion);
 
-      function showQuestion(){
-        disclaimerEl.textContent="The score is increased by 1 for each right response and decreased by 0.25 for each incorrect response. If you are unsure about the precise response, you can skip it by clicking next.";
- 
-         // Destructuring the object
-       const{correctAnswer, options, question} = questions[currentQuestion];
+function updateTimer() {
+  const currentTime = new Date();
+  const elapsedTime = Math.floor((currentTime - startTime) / 1000);
+  const remainingTime = 30 - elapsedTime;
+  const minutes = Math.floor(remainingTime / 60);
+  const seconds = remainingTime % 60;
+  timerElement.textContent = `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+}
+
+
+function endTest() {
+  clearInterval(timerInterval);
+  endTime = new Date();
+  const elapsedTime = Math.floor((endTime - startTime) / 1000);
+  const typedSentence = inputElement.value.trim();
+  const correctSentence = sentenceElement.textContent.trim();
   
-        //Setting question text content
-      questionEl.textContent = question; 
-      
-      const shuffledOptions = shuffleOptions(options);
-          //Populating the Options div with the buttons.
-          shuffledOptions.forEach((opt) => {
-            const btn = document.createElement('button');
-            btn.textContent = opt;
-            optionEl.appendChild(btn);
-            document.getElementById("next").style.display = "block";
-        // Event handling on the button:
-        btn.addEventListener("click", () => {
-            if(opt === correctAnswer){
-                score++;
-            }
-            else{
-                score=score-0.25;
-            }   
-           
-        scoreEl.textContent = `Score: ${score}/${questions.length}`;
-        nextQuestion();
-            });
-        });
-    }
-    function nextQuestion(){
-      currentQuestion++;
-     optionEl.textContent = '';
-      if(currentQuestion>=10){
-        questionEl.textContent = 'Quiz Completed!!';
-        disclaimerEl.textContent='';
-        nextEl.remove();
-      } 
-      else{
-           showQuestion();
-      }
+  let speed = 0;
+  let typedWords = [];
+  if(typedSentence != ""){
+    typedWords = typedSentence.split(" ");
+  }
   
+  const correctWords = correctSentence.split(" ");
+  console.log(correctWords);
+  let correctCount = 0;
+  let ind =0;
+  typedWords.forEach((word, index) => {
+    if (word === correctWords[index]) {
+      correctCount++;
+      ind =index;
     }
-  
-  //Shuffling the Options
-  function shuffleOptions(options) {
-      for (let i = options.length - 1; i >= 0; i--) {
-        const j = Math.floor(Math.random() * i + 1);
-        [options[i], options[j]] = [
-          options[j],
-          options[i],
-        ];
-      }
-      return options;
-    }
+  });
+  if(typedSentence != ""){
+    speed = Math.floor(((correctCount) / 30) * 60);
+  }
+  const accuracy = (correctCount / typedWords.length  ) * 100;
+  speedElement.textContent = speed;
+  accuracyElement.textContent = accuracy.toFixed(2);
+  resultElement.style.display = "block";
+  retryButton.focus();
+}
+
+startButton.addEventListener("click", startTest);
+retryButton.addEventListener("click", () => {
+  resultElement.style.display = "none";
+  startButton.disabled = false;
+  inputElement.value = "";
+});
